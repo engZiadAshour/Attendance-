@@ -80,7 +80,7 @@ function draw(){
  const n=$('name').value.trim();let fs=64;x.font='800 '+fs+'px Cairo';while(x.measureText(n||'Your Name').width>880&&fs>28){fs-=2;x.font='800 '+fs+'px Cairo'}
  txt(n||'Your Name',540,930,fs,'800',n?NAVY:'#9bb5b3');
  const ug=x.createLinearGradient(470,0,610,0);ug.addColorStop(0,TEAL);ug.addColorStop(1,GRN);x.fillStyle=ug;x.fillRect(470,946,140,6);
- const d=['كلية الحاسبات والمعلومات','24/10/2026','1:00'];
+ const d=['كلية الحاسبات والمعلومات','24/10/2026','12:00'];
  if(d.length){let fz=28;const line=d.join('    •    ');x.font='600 '+fz+'px Cairo';while(x.measureText(line).width>880&&fz>18){fz-=1;x.font='600 '+fz+'px Cairo'}txt(line,540,998,fz,'600',NAVY)}
  txt('#RoyaBeyond   #رؤية',540,d.length?1028:1004,22,'400','#6f8a99');
 }
